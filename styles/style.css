@@ -1,14 +1,279 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root {
+    --accent: #E6533C;
+}
 
 * {
     margin: 0;
     padding: 0;
     outline: none;
+    scroll-behavior: smooth;
 }
 
+
 body {
-    background-color: #333;
+    background-color: #000000;
     color: #fff;
     font-family: Urbanist, monospace;
+}
+
+header {
+    background: linear-gradient(#000000, #ffffff20, #11111150);
+}
+
+/* =========== Common styles ========= */
+
+.display-flex {
+    display: flex;
+}
+
+.display-flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.display-none {
+    display: none;
+}
+
+.btn {
+    border: 1px solid white;
+    background-color: transparent;
+    padding: .5rem 1rem;
+    border-radius: 5rem;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: Urbanist, monospace;
+}
+
+.btn-accent {
+    background-color: var(--accent);
+    border: none;
+    font-weight: bold;
+}
+
+span.fancy {
+    font-family: Great Vibes, monospace;
+}
+
+.section-wrapper {
+    margin: auto auto;
+}
+
+.section-texts {
+    margin-top: 5rem;
+}
+
+.section-title {
+    font-size: 3.3rem;
+}
+
+p.section-descripton {
+    font-size: 1rem;
+    color: #ffffff80;
+    /* background-color: yellow; */
+}
+
+/* 
+header,
+main,
+section,
+footer {
+    border: 2px dashed #444444;
+} */
+
+.section-ttile {
+    font-weight: bolder;
+}
+
+.section-description {
+    font-size: 1rem;
+    color: #ffffff50;
+}
+
+/* ========== header begins ========== */
+
+header {
+    /* margin: 0 10%; */
+}
+
+header nav {
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    margin: 0 10%;
+
+}
+
+header nav h2.logo {
+    font-size: 2rem;
+    color: var(--accent);
+}
+
+/* header nav div.nav-elements ul{
+    border 
+} */
+
+header nav div.nav-elements ul {
+    list-style: none;
+    border: 1px solid #ffffff20;
+    border-radius: 5rem;
+    justify-content: space-around;
+    align-items: center;
+    padding-right: 2rem;
+    gap: 3rem;
+}
+
+
+/* ============= hero section begins ============*/
+
+section.hero-section div.hero-contents {
+    margin: auto auto;
+    justify-content: space-around;
+    align-items: center;
+}
+
+section.hero-section div.hero-contents div.hero-texts,
+section.hero-section div.hero-contents div.hero-image {
+
+    /* border: 1px solid red; */
+}
+
+section.hero-section div.hero-contents div.hero-texts h1 {
+    font-size: 4.5rem;
+
+}
+
+section.hero-section div.hero-contents div.hero-texts h1 span {
+    font-weight: bolder;
+}
+
+section.hero-section div.hero-contents div.hero-texts p {
+    font-size: 1rem;
+    width: 32rem;
+}
+
+section.hero-section div.hero-contents div.hero-texts button.btn {
+    margin: 2.5rem 0;
+    padding: 1rem 2.5rem;
+}
+
+section.hero-section div.hero-contents div.hero-image img {
+    /* border: 1px solid yellow; */
+    transform: translateY(10%);
+}
+
+/* ========== stat buttons ========= */
+section.hero-section div.hero-contents div.hero-image div.stat {
+    background-color: #ffffff20;
+    backdrop-filter: blur(2rem);
+    border-radius: .7rem;
+    border: 1.5px solid #ffffff40;
+    width: max-content;
+    padding: 15px 23px;
+}
+
+section.hero-section div.hero-contents div.hero-image div.stat1 {
+    transform: translate(200px, -400px)
+}
+
+section.hero-section div.hero-contents div.hero-image div.stat2 {
+    justify-content: space-between;
+    gap: 20px;
+    transform: translate(-100px, -250px)
+}
+
+section.hero-section div.hero-contents div.hero-image div.stat2 i.fa-circle-play {
+    font-size: 2.5rem;
+    color: var(--accent);
+}
+
+
+
+/* ============Habit change section =============== */
+
+section.habit {
+    text-align: center;
+}
+
+section.habit div.habit-wrapper div.section-texts h2.section-title {
+    font-size: 3.3rem;
+    /* background-color: yellow; */
+}
+
+section.habit div.habit-wrapper div.cards-wrapper {
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin-top: 4rem;
+}
+
+section.habit div.habit-wrapper div.cards-wrapper div.card {
+    width: 11rem;
+    padding: 1rem;
+    /* border: solid yellow; */
+}
+
+section.habit div.habit-wrapper div.cards-wrapper div.card img.card-img {
+    border-radius: 50%;
+}
+
+section.habit div.habit-wrapper div.cards-wrapper div.card div.card-text {
+    margin-top: 1.8rem;
+}
+
+/* ============ Run extr section =============== */
+section.run {
+    max-width: 75vw;
+    margin: 10% auto;
+}
+
+section.run-extra div.run-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #222222;
+    width: 60vw;
+    margin: 6% auto;
+    border-radius: 18px;
+    padding: 3rem;
+}
+
+section.run-extra div.run-wrapper div.run-texts p,
+section.run-extra div.run-wrapper div.run-texts button {
+    margin-top: 1.5rem;
+}
+
+section.run-extra div.run-wrapper div.run-texts button {
+    padding: 1rem 2.5rem;
+}
+
+section.run-extra div.run-wrapper div.run-img {
+    background-image: url("/images/run.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    border-radius: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+/* ======== Mobile phone media query =========== */
+
+@media screen and (max-width:576px) {
+    .mobile-hide {
+        display: none;
+    }
+
+    .mobile-show {
+        display: inline;
+    }
+
 }

@@ -4,30 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e088138a63.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/styles/style.css">
     <title>Fitness Website</title>
 </head>
 
 <body>
     <header>
-        <nav>
-            <h2 class="logo">Fitness</h3>
-                <div class="nav-elements">
-                    <ul>
-                        <li class="btn-accent">Home</li>
-                        <li>Service</li>
-                        <li>Contact</li>
-                        <li>About</li>
-                    </ul>
-                </div>
+        <nav class=" display-flex-row">
+            <h2 class="logo">Fitness</h2>
+            <div class="nav-elements mobile-hide">
+                <ul class="display-flex-row">
+                    <li class="btn btn-accent">Home</li>
+                    <li>Service</li>
+                    <li>Contact</li>
+                    <li>About</li>
+                </ul>
+            </div>
+            <div class="hamburger mobile-show display-none"><i class="fa-solid fa-bars"></i></div>
         </nav>
 
         <!--================== nav end =============== -->
 
         <section class="hero-section">
-            <div class="hero-contents">
+            <div class="hero-contents display-flex-row">
                 <div class="hero-texts">
-                    <h1>Get body in <span class="fancy">shape</span> & stay healthy </h1>
+                    <h1>Get body in </br> <span class="fancy">shape</span> & stay healthy </h1>
                     <p>A huge selection of health and fitness content, healthy recipes and transformation stories to
                         help you get fit and stay
                         fit!</p>
@@ -36,14 +38,14 @@
 
                 </div>
                 <div class="hero-image">
-                    <img src="/images/Images 2.png" alt="">
+                    <img src=" /images/Images 2.png" alt="">
                     <div class="stat stat1">
                         <h1>500+</h1>
                         <span>Free Workout Videos</span>
                     </div>
 
-                    <div class="stat sta2">
-
+                    <div class="stat stat2 display-flex-row">
+                        <i class="fa-solid fa-circle-play"></i>
                         <div>
                             <h1>350+</h1>
                             <span>Video Turorials</span>
@@ -58,9 +60,105 @@
 
     </header>
 
+
     <main>
 
+        <section class="habit">
+            <div class="habit-wrapper section-wrapper">
+                <div class="section-texts">
+
+                    <h2 class="section-title">Change Your Habit</h2>
+                    <p class="section-descripton">We believe fitness should be accessible to everyone, everywhere,
+                        regardless of income or access to a gym.</p>
+                </div>
+                <div class="cards-wrapper display-flex-row">
+                    <div class="card">
+                        <img src="/images/image 3.png" alt="" class="card-img">
+                        <div class="card-text">
+
+                            <h3 class="card-title">Movement</h3>
+                            <p class="card-description section-descripton">We believe fitness movement should be
+                                accessible to everyone</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="/images/image 2.png" alt="" class="card-img">
+                        <div class="card-text">
+
+                            <h3 class="card-title">Time</h3>
+                            <p class="card-description section-descripton">We believe fitness should be accessible to
+                                everyone regardless
+                                of
+                                time</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="/images/image 4.png" alt="" class="card-img">
+                        <div class="card-text">
+
+                            <h3 class="card-title">Practice</h3>
+                            <p class="card-description section-descripton">We believe everyone should practice physical
+                                exercise</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/images/image 5.png" alt="" class="card-img">
+                        <div class="card-text">
+
+                            <h3 class="card-title">Weight Loss</h3>
+                            <p class="card-description section-descripton">We believe exercises helps us to loss weight
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!--========================= Habit change ends ================= -->
+
+
+
+        <section class="run-extra">
+            <div class="run-wrapper">
+                <div class="run-texts">
+                    <h1 class="section-title">Run an Extra </br>
+                        Mile Easily</h1>
+                    <p class="section-description">We believe fitness should be accessible to everyone, everywhere,
+                        regardless of income or access to a gym. With hundreds
+                        of professional workouts.</p>
+                    <button class="btn btn-accent">Join Now</button>
+                </div>
+                <div class="run-img"></div>
+            </div>
+        </section>
+
+
+        <section class="bmi">
+            <div class="section-wrapper">
+                <div class="section-texts">
+                    <h1 class="section-title">BMI Calculator</h1>
+                    <p class="section-description">We believe fitness should be accessible to everyone, everywhere,
+                        regardless of income or access to a gym.</p>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
     </main>
+
+
+
+
+
+
     <footer>
 
     </footer>
