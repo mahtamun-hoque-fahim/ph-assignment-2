@@ -538,13 +538,13 @@ footer div.copyright-part span {
 }
 
 @media screen and (max-width:576px) {
-    *:nth-child(n) {
+    /* *:nth-child(n) {
         border: 1px dashed yellow;
     }
 
     *:nth-child(n+2) {
         border: 1px dashed white;
-    }
+    } */
 
     header nav {
         padding: 2.5rem .5rem;
@@ -563,7 +563,7 @@ footer div.copyright-part span {
     section.hero-section div.hero-contents div.hero-texts,
     section.hero-section div.hero-contents div.hero-image {
         max-width: 80%;
-        border: 1px solid red;
+        /* border: 1px solid red; */
         margin: auto auto;
     }
 
@@ -803,20 +803,9 @@ footer div.copyright-part span {
 
     footer div.branding-part div.brand-child {
         display: grid;
-        place-content: center;
+        place-content: start;
         /* background-color: yellow; */
     }
-
-    footer div.branding-part div.branding .logo {
-        margin: 1rem 0;
-    }
-
-
-
-    footer div.branding-part div.links ul {
-        list-style: none;
-    }
-
     footer div.branding-part div.links ul h2 {
         margin: 1rem 0;
     }
