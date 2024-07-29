@@ -388,28 +388,28 @@ section.team div.section-wrapper div.gallery div.card {
     height: 15rem;
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;  
+    background-repeat: no-repeat;
     background-color: #00000040;
-    background-blend-mode: overlay  ;
+    background-blend-mode: overlay;
 }
 
 section.team div.section-wrapper div.gallery div.card1 {
     background-image: url("/images/trainer1.png");
-        background-position: top;
-    }
-    
-    section.team div.section-wrapper div.gallery div.card2 {
-        background-image: url("/images/trainer2.png");
-    }
-    
-    section.team div.section-wrapper div.gallery div.card3 {
-        background-position: top;
-        background-image: url("/images/trainer3.png");
-    }
-    
-    section.team div.section-wrapper div.gallery div.card4 {
-        background-image: url("/images/trainer4.png");
-        background-position: top,right;
+    background-position: top;
+}
+
+section.team div.section-wrapper div.gallery div.card2 {
+    background-image: url("/images/trainer2.png");
+}
+
+section.team div.section-wrapper div.gallery div.card3 {
+    background-position: top;
+    background-image: url("/images/trainer3.png");
+}
+
+section.team div.section-wrapper div.gallery div.card4 {
+    background-image: url("/images/trainer4.png");
+    background-position: top, right;
 }
 
 section.team div.section-wrapper div.gallery div.card5 {
@@ -454,7 +454,8 @@ footer div.branding-part div.brand-child {
     place-content: center;
     /* background-color: yellow; */
 }
-footer div.branding-part div.branding .logo{
+
+footer div.branding-part div.branding .logo {
     margin: 1rem 0;
 }
 
@@ -479,9 +480,11 @@ footer div.copyright-part {
     display: grid;
     align-items: center;
 }
-footer div.copyright-part hr{
+
+footer div.copyright-part hr {
     border: #ffffff20 solid 2px;
 }
+
 footer div.copyright-part span {
     margin: 2rem auto;
 }
@@ -505,6 +508,336 @@ footer div.copyright-part span {
 
     .mobile-show {
         display: inline;
+    }
+
+}
+
+@media screen and (max-width:576px) {
+    *:nth-child(n) {
+        border: 1px dashed yellow;
+    }
+
+    *:nth-child(n+2) {
+        border: 1px dashed white;
+    }
+
+    header nav {
+        padding: 2.5rem .5rem;
+        margin: 0 0%;
+    }
+
+    /* ============= hero section begins ============*/
+
+    section.hero-section div.hero-contents {
+        margin: auto auto;
+        /* justify-content: space-around;
+            align-items: center; */
+        flex-direction: column;
+    }
+
+    section.hero-section div.hero-contents div.hero-texts,
+    section.hero-section div.hero-contents div.hero-image {
+        max-width: 80%;
+        border: 1px solid red;
+        margin: auto auto;
+    }
+
+    section.hero-section div.hero-contents div.hero-texts {
+        margin: 4rem 0 0 0;
+    }
+
+    section.hero-section div.hero-contents div.hero-texts h1 {
+        font-size: 2rem;
+        width: 60%;
+
+    }
+
+    section.hero-section div.hero-contents div.hero-texts p {
+        width: 80%;
+        height: max-content;
+        margin: 2rem 0 0 0;
+    }
+
+    section.hero-section div.hero-contents div.hero-texts button.btn {
+        margin: 1rem 0;
+        padding: .8rem 1rem;
+    }
+
+    section.hero-section div.hero-contents div.hero-image img {
+        /* border: 1px solid yellow; */
+        max-width: 90%;
+    }
+
+    /* ========== stat buttons ========= */
+    section.hero-section div.hero-contents div.hero-image div.stat {
+        padding: .5rem;
+    }
+
+    section.hero-section div.hero-contents div.hero-image div.stat1 {
+        transform: translate(100px, -250px);
+    }
+
+    section.hero-section div.hero-contents div.hero-image div.stat2 {
+        transform: translate(0px, -200px);
+    }
+
+    section.hero-section div.hero-contents div.hero-image div.stat2 i.fa-circle-play {
+        font-size: 2.5rem;
+        color: var(--accent);
+    }
+
+
+
+    /* ============Habit change section =============== */
+
+    section.habit div.habit-wrapper div.section-texts h2.section-title {
+        font-size: 2rem;
+        /* background-color: yellow; */
+    }
+
+    section.habit div.habit-wrapper div.cards-wrapper {
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+        margin: 4rem 0;
+        flex-direction: column;
+    }
+
+    /* ============ Run extr section =============== */
+
+    section.run-extra div.run-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 1fr .5fr;
+        gap: 2rem;
+    }
+
+    section.run-extra div.run-wrapper div.run-img {
+        background-image: url("/images/run.jpg");
+        background-position: right;
+        background-size: cover;
+    }
+
+
+    /* ============= BMI Section===========  */
+
+    section.bmi div.bmi-heading {
+        /* background-color: pink; */
+        max-width: 100%;
+    }
+
+    section.bmi div.bmi-heading div.section-texts h1.section-title {
+        font-size: 2.5rem;
+    }
+
+    section.bmi div.bmi-heading div.section-texts p.section-description {
+        max-width:90% ;
+        margin: 2rem 0;
+    }
+
+    section.bmi div.bmi-main div.section-wrapper {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        display: grid;
+        place-content: center;
+    }
+
+    section.bmi div.bmi-main div.section-wrapper div.chart-part {
+        width: max-content;
+        margin: auto auto;
+    }
+    /* ============ BMI Caluculate part==================== */
+
+    section.bmi div.bmi-main div.section-wrapper div.calculate-part {
+        width:100%;;
+    }
+
+    section.bmi div.bmi-main div.section-wrapper div.calculate-part h1 {
+        font-size: 2rem;
+    }
+    section.bmi div.bmi-main div.section-wrapper div.calculate-part p {
+        margin: 1rem 0;
+    }
+
+    section.bmi div.bmi-main div.section-wrapper div.calculate-part input,
+    select {
+        width: 50%;
+    }
+
+    section.bmi div.bmi-main div.section-wrapper div.calculate-part input::placeholder,
+    section.bmi div.bmi-main div.section-wrapper div.calculate-part select>option:placeholder-shown {
+        color: #ffffff40 !important;
+    }
+
+
+
+
+    section.bmi div.bmi-main div.section-wrapper div.calculate-part form.input-fields {
+        display: grid;
+        /* grid-template-areas: "h h h w w w"
+     "g g g a a a"
+          " b b"; */
+        /* background-color: yellow; */
+        /* grid-template-rows: repeat(2,1fr); */
+        grid-template-columns: repeat(2, 1fr);
+        background-color: yellow;
+        gap: 1rem;
+        margin: 1rem 0;
+
+    }
+
+    section.bmi div.bmi-main div.section-wrapper div.calculate-part form.input-fields input.height {
+        grid-area: "h";
+        padding: 1rem 3rem;
+    }
+
+    section.bmi div.bmi-main div.section-wrapper div.calculate-part form.input-fields input.weight {
+        grid-area: "w";
+        padding: 1rem 3rem;
+    }
+
+    section.bmi div.bmi-main div.section-wrapper div.calculate-part form.input-fields select#gender {
+        grid-area: "g";
+        padding: 1rem 3rem;
+    }
+
+    section.bmi div.bmi-main div.section-wrapper div.calculate-part form.input-fields select#activity {
+        grid-area: "a";
+        padding: 1rem 3rem;
+    }
+
+    section.bmi div.bmi-main div.section-wrapper div.calculate-part form.input-fields button.calculate {
+        grid-area: "b";
+        padding: 1rem 3rem;
+    }
+
+
+    /* =============== our team part ============= */
+
+    section.team div.section-wrapper {
+        margin: auto auto;
+
+    }
+
+    section.team div.section-wrapper div.section-texts {
+        margin: auto auto;
+        text-align: center;
+    }
+
+    section.team div.section-wrapper div.gallery {
+        background-color: #222222;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+        width: 70%;
+        margin: 2.5rem auto;
+        padding: 2rem;
+        border-radius: 1rem;
+    }
+
+    section.team div.section-wrapper div.gallery div.card {
+        height: 15rem;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #00000040;
+        background-blend-mode: overlay;
+    }
+
+    section.team div.section-wrapper div.gallery div.card1 {
+        background-image: url("/images/trainer1.png");
+        background-position: top;
+    }
+
+    section.team div.section-wrapper div.gallery div.card2 {
+        background-image: url("/images/trainer2.png");
+    }
+
+    section.team div.section-wrapper div.gallery div.card3 {
+        background-position: top;
+        background-image: url("/images/trainer3.png");
+    }
+
+    section.team div.section-wrapper div.gallery div.card4 {
+        background-image: url("/images/trainer4.png");
+        background-position: top, right;
+    }
+
+    section.team div.section-wrapper div.gallery div.card5 {
+        background-image: url("/images/trainer5.png");
+    }
+
+    section.team div.section-wrapper div.gallery div.card6 {
+        background-image: url("/images/trainer6.png");
+    }
+
+    section.team div.section-wrapper div.gallery div.card div.instructor {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: end;
+        /* background-color: yellow; */
+        height: 90%;
+        margin: 0 0 0 1rem;
+    }
+
+
+    /* =========== Footer begins =========== */
+
+    footer {
+        padding: 2rem;
+    }
+
+    footer div.branding-part,
+    div.copyright-part {
+        width: 70%;
+        margin: auto auto;
+    }
+
+    footer div.branding-part {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    footer div.branding-part div.brand-child {
+        display: grid;
+        place-content: center;
+        /* background-color: yellow; */
+    }
+
+    footer div.branding-part div.branding .logo {
+        margin: 1rem 0;
+    }
+
+
+
+    footer div.branding-part div.links ul {
+        list-style: none;
+    }
+
+    footer div.branding-part div.links ul h2 {
+        margin: 1rem 0;
+    }
+
+    footer div.branding-part div.links ul {
+        display: grid;
+        gap: 1rem;
+    }
+
+    footer div.copyright-part {
+        margin: 1rem auto;
+        padding: 1rem;
+        display: grid;
+        align-items: center;
+    }
+
+    footer div.copyright-part hr {
+        border: #ffffff20 solid 2px;
+    }
+
+    footer div.copyright-part span {
+        margin: 2rem auto;
     }
 
 }
