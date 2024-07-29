@@ -391,6 +391,7 @@ section.team div.section-wrapper div.gallery div.card {
     background-repeat: no-repeat;
     background-color: #00000040;
     background-blend-mode: overlay;
+    border-radius: .8rem;
 }
 
 section.team div.section-wrapper div.gallery div.card1 {
@@ -494,12 +495,36 @@ footer div.copyright-part span {
 
 
 
+/* =====================================================================================
+========================================================================================
+========================================================================================
+========================================================================================
+========================================================================================
+========================================================================================
+========================================================================================
+========================================================================================
+========================================================================================
+========================================================================================
+========================================================================================
+========================================================================================
+========================================================================================
+*/
 
 
 
 
 
-/* ======== Mobile phone media query =========== */
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width:576px) {
     .mobile-hide {
@@ -630,61 +655,77 @@ footer div.copyright-part span {
     }
 
     section.bmi div.bmi-heading div.section-texts p.section-description {
-        max-width:90% ;
+        max-width: 90%;
         margin: 2rem 0;
     }
+
 
     section.bmi div.bmi-main div.section-wrapper {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        display: grid;
         place-content: center;
+        width: 80vw;
+        margin: auto auto;
     }
 
     section.bmi div.bmi-main div.section-wrapper div.chart-part {
-        width: max-content;
+        max-width: max-content;
         margin: auto auto;
     }
+
     /* ============ BMI Caluculate part==================== */
 
     section.bmi div.bmi-main div.section-wrapper div.calculate-part {
-        width:100%;;
+        display: grid;
+        place-content: center;
+        /* background-color: red; */
+        margin: auto auto;
     }
 
     section.bmi div.bmi-main div.section-wrapper div.calculate-part h1 {
         font-size: 2rem;
+        width: max-content;
     }
+
     section.bmi div.bmi-main div.section-wrapper div.calculate-part p {
         margin: 1rem 0;
+        width: 100%;
     }
-
-    section.bmi div.bmi-main div.section-wrapper div.calculate-part input,
-    select {
-        width: 50%;
-    }
-
-    section.bmi div.bmi-main div.section-wrapper div.calculate-part input::placeholder,
-    section.bmi div.bmi-main div.section-wrapper div.calculate-part select>option:placeholder-shown {
-        color: #ffffff40 !important;
-    }
-
-
-
 
     section.bmi div.bmi-main div.section-wrapper div.calculate-part form.input-fields {
-        display: grid;
-        /* grid-template-areas: "h h h w w w"
-     "g g g a a a"
-          " b b"; */
-        /* background-color: yellow; */
-        /* grid-template-rows: repeat(2,1fr); */
+
         grid-template-columns: repeat(2, 1fr);
-        background-color: yellow;
         gap: 1rem;
-        margin: 1rem 0;
+        /* background-color: rgba(255, 255, 0, 0.342); */
+        /* width: 50%; */
+    }
+
+    section.bmi div.bmi-main div.section-wrapper div.calculate-part form.input-fields input {
+        background-color: #ffffff20;
+        border: none;
+        width: 10vw;
+        border-radius: .5rem;
+        padding: 1rem 1.5rem;
+        /* background-color: rgba(255, 255, 0, 0.342); */
+        /* width: 50%; */
 
     }
+
+    section.bmi div.bmi-main div.section-wrapper div.calculate-part form.input-fields select {
+        /* background-color: yellow; */
+        background-color: #ffffff20;
+        border: none;
+        width: 100%;
+        border-radius: .5rem;
+        padding: 1rem 1.5rem;
+    }
+
+    section.bmi div.bmi-main div.section-wrapper div.calculate-part form.input-fields input::placeholder,
+    section.bmi div.bmi-main div.section-wrapper div.calculate-part form.input-fields select>option:placeholder-shown {
+        color: #ffffff !important;
+    }
+
 
     section.bmi div.bmi-main div.section-wrapper div.calculate-part form.input-fields input.height {
         grid-area: "h";
@@ -715,24 +756,20 @@ footer div.copyright-part span {
     /* =============== our team part ============= */
 
     section.team div.section-wrapper {
-        margin: auto auto;
+        padding: .5rem;
 
     }
 
-    section.team div.section-wrapper div.section-texts {
-        margin: auto auto;
-        text-align: center;
-    }
+    section.team div.section-wrapper div.section-texts {}
 
+    section.team div.section-wrapper div.section-texts h1 {
+        font-size: 2rem;
+    }
+    
     section.team div.section-wrapper div.gallery {
-        background-color: #222222;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1.5rem;
-        width: 70%;
-        margin: 2.5rem auto;
-        padding: 2rem;
-        border-radius: 1rem;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+
     }
 
     section.team div.section-wrapper div.gallery div.card {
@@ -742,33 +779,6 @@ footer div.copyright-part span {
         background-repeat: no-repeat;
         background-color: #00000040;
         background-blend-mode: overlay;
-    }
-
-    section.team div.section-wrapper div.gallery div.card1 {
-        background-image: url("/images/trainer1.png");
-        background-position: top;
-    }
-
-    section.team div.section-wrapper div.gallery div.card2 {
-        background-image: url("/images/trainer2.png");
-    }
-
-    section.team div.section-wrapper div.gallery div.card3 {
-        background-position: top;
-        background-image: url("/images/trainer3.png");
-    }
-
-    section.team div.section-wrapper div.gallery div.card4 {
-        background-image: url("/images/trainer4.png");
-        background-position: top, right;
-    }
-
-    section.team div.section-wrapper div.gallery div.card5 {
-        background-image: url("/images/trainer5.png");
-    }
-
-    section.team div.section-wrapper div.gallery div.card6 {
-        background-image: url("/images/trainer6.png");
     }
 
     section.team div.section-wrapper div.gallery div.card div.instructor {
@@ -784,20 +794,11 @@ footer div.copyright-part span {
 
     /* =========== Footer begins =========== */
 
-    footer {
-        padding: 2rem;
-    }
-
-    footer div.branding-part,
-    div.copyright-part {
-        width: 70%;
-        margin: auto auto;
-    }
 
     footer div.branding-part {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 2rem;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+
     }
 
     footer div.branding-part div.brand-child {
