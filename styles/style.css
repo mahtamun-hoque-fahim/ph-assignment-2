@@ -50,8 +50,13 @@ header {
 
 .btn-accent {
     background-color: var(--accent);
+    border: 1px solid var(--accent);
     border: none;
     font-weight: bold;
+}
+
+.btn-accent:hover {
+    background-color: #7b291c;
 }
 
 span.fancy {
@@ -432,6 +437,75 @@ section.team div.section-wrapper div.gallery div.card div.instructor {
 }
 
 
+/* ============= Free swags option= ========== */
+section.review {
+    max-width: 75vw;
+    margin: 10% auto;
+}
+
+section.review div.review-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #222222;
+    width: 60vw;
+    margin: 6% auto;
+    border-radius: 18px;
+    padding: 3rem;
+}
+
+section.review div.review-wrapper div.review-texts>* {
+    margin-left: 2rem;
+}
+
+section.review div.review-wrapper div.review-texts p,
+section.review div.review-wrapper div.review-texts button {
+    margin-top: 1.5rem;
+}
+
+section.review div.review-wrapper div.review-texts button {
+    padding: 1rem 2.5rem;
+}
+
+section.review div.review-wrapper div.merch-img {
+    display: grid;
+    place-content: center;
+}
+
+section.review div.review-wrapper div.merch-img div.circle-accent {
+    height: 10rem;
+    width: 10rem;
+    background-color: var(--accent);
+    border-radius: 50%;
+}
+
+section.review div.review-wrapper div.merch-img div.circle-accent img {
+    width: 10rem;
+    position: relative;
+}
+
+section.review div.review-wrapper div.merch-img div.circle-accent img.animate1 {
+    width: 10rem;
+    position: relative;
+    transform: rotate(30deg) translateX(5rem) translateY(1rem);
+}
+
+section.review div.review-wrapper div.merch-img div.circle-accent img.animate2 {
+    width: 10rem;
+    position: relative;
+    transform: rotate(30deg) translateX(-10rem) translateY(-5rem);
+}
+
+section.review:hover div.review-wrapper div.merch-img div.circle-accent img.animate1 {
+    width: 15rem;
+    transform: rotate(30deg) translateX(1rem) translateY(-5rem);
+}
+
+section.review:hover div.review-wrapper div.merch-img div.circle-accent img.animate2 {
+    transform: rotate(30deg) translateX(-10rem) translateY(-10rem);
+    width: 15rem;
+}
+
+
 /* =========== Footer begins =========== */
 
 footer {
@@ -489,6 +563,10 @@ footer div.copyright-part hr {
 footer div.copyright-part span {
     margin: 2rem auto;
 }
+
+
+
+
 
 
 
@@ -797,6 +875,55 @@ footer div.copyright-part span {
     section.team div.section-wrapper div.gallery div.card3 {
         background-position: top;
 
+    }
+
+
+
+    /* ============= Free swags option= ========== */
+    section.review div.review-wrapper {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        width: 70%;
+    }
+
+    section.review div.review-wrapper div.review-texts>* {
+        margin-left: 0rem;
+    }
+
+    section.review div.review-wrapper div.review-texts h1 {
+        font-size: 2rem;
+    }
+
+    section.review div.review-wrapper div.merch-img div.circle-accent {
+        height: 10rem;
+        width: 10rem;
+        background-color: var(--accent);
+        border-radius: 50%;
+    }
+
+    section.review div.review-wrapper div.merch-img div.circle-accent img {
+        width: 5rem;
+    }
+
+    section.review div.review-wrapper div.merch-img div.circle-accent img.animate1 {
+        width: 10rem;
+        transform: rotate(30deg) translateX(3rem) translateY(-0rem);
+    }
+
+    section.review div.review-wrapper div.merch-img div.circle-accent img.animate2 {
+        width: 8rem;
+        transform: rotate(30deg) translateX(-5rem) translateY(-5rem);
+    }
+
+    section.review:hover div.review-wrapper div.merch-img div.circle-accent img.animate1 {
+        width: 15rem;
+        transform: rotate(30deg) translateX(1rem) translateY(-5rem);
+    }
+
+    section.review:hover div.review-wrapper div.merch-img div.circle-accent img.animate2 {
+        transform: rotate(30deg) translateX(-10rem) translateY(-10rem);
+        width: 15rem;
     }
 
 
