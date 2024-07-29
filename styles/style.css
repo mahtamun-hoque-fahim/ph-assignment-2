@@ -297,12 +297,19 @@ th {
     text-align: left;
 }
 
+
+
+
+
+/* ============ BMI Caluculate part==================== */
+
 section.bmi div.bmi-main div.section-wrapper div.calculate-part {
     display: grid;
     place-content: center;
     width: 50%;
 }
-section.bmi div.bmi-main div.section-wrapper div.calculate-part p{
+
+section.bmi div.bmi-main div.section-wrapper div.calculate-part p {
     margin: 1rem 0;
 }
 
@@ -315,8 +322,8 @@ select {
 }
 
 section.bmi div.bmi-main div.section-wrapper div.calculate-part input::placeholder,
-section.bmi div.bmi-main div.section-wrapper div.calculate-part select > option:placeholder-shown {
-    color: #ffffff40!important;
+section.bmi div.bmi-main div.section-wrapper div.calculate-part select>option:placeholder-shown {
+    color: #ffffff40 !important;
 }
 
 
@@ -327,11 +334,11 @@ section.bmi div.bmi-main div.section-wrapper div.calculate-part form.input-field
     /* grid-template-areas: "h h h w w w"
  "g g g a a a"
       " b b"; */
-      /* background-color: yellow; */
-      /* grid-template-rows: repeat(2,1fr); */
-      grid-template-columns: repeat(2,1fr);
-      gap: 1rem ;
-      margin: 1rem 0;
+    /* background-color: yellow; */
+    /* grid-template-rows: repeat(2,1fr); */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin: 1rem 0;
 
 }
 
@@ -359,6 +366,88 @@ section.bmi div.bmi-main div.section-wrapper div.calculate-part form.input-field
     grid-area: "b";
     padding: 1rem 3rem;
 }
+
+
+/* =============== our team part ============= */
+
+section.team div.section-wrapper {
+    margin: auto auto;
+
+}
+
+section.team div.section-wrapper div.section-texts {
+    margin: auto auto;
+    text-align: center;
+}
+
+section.team div.section-wrapper div.gallery {
+    background-color: #222222;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    width: 70%;
+    margin: 2.5rem auto;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+section.team div.section-wrapper div.gallery div.card {
+
+    height: 15rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: .5rem;
+
+}
+
+section.team div.section-wrapper div.gallery div.card1 {
+    background-image: url("/images/trainer1.png");
+}
+
+section.team div.section-wrapper div.gallery div.card2 {
+    background-image: url("/images/trainer2.png");
+}
+
+section.team div.section-wrapper div.gallery div.card3 {
+    background-image: url("/images/trainer3.png");
+}
+
+section.team div.section-wrapper div.gallery div.card4 {
+    background-image: url("/images/trainer4.png");
+}
+
+section.team div.section-wrapper div.gallery div.card5 {
+    background-image: url("/images/trainer5.png");
+}
+
+section.team div.section-wrapper div.gallery div.card6 {
+    background-image: url("/images/trainer6.png");
+}
+
+section.team div.section-wrapper div.gallery div.card div.instructor {
+    display: flex;
+    flex-direction: column;
+   align-items: start;
+   justify-content: end;
+   /* background-color: yellow; */
+   height:90%;
+   margin: 0 0 0 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
