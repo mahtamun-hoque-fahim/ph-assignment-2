@@ -524,9 +524,15 @@ footer div.copyright-part span {
 
 
 
-
-
 @media screen and (max-width:576px) {
+
+    /* *:nth-child(n) {
+        border: 1px dashed yellow;
+    }
+
+    *:nth-child(n+2) {
+        border: 1px dashed white;
+    } */
     .mobile-hide {
         display: none;
     }
@@ -535,20 +541,9 @@ footer div.copyright-part span {
         display: inline;
     }
 
-}
-
-@media screen and (max-width:576px) {
-    /* *:nth-child(n) {
-        border: 1px dashed yellow;
-    }
-
-    *:nth-child(n+2) {
-        border: 1px dashed white;
-    } */
-
     header nav {
         padding: 2.5rem .5rem;
-        margin: 0 0%;
+        margin: 0 10%;
     }
 
     /* ============= hero section begins ============*/
@@ -650,13 +645,17 @@ footer div.copyright-part span {
         max-width: 100%;
     }
 
+    section.bmi div.bmi-heading div.section-texts {
+        text-align: center;
+    }
+
     section.bmi div.bmi-heading div.section-texts h1.section-title {
         font-size: 2.5rem;
     }
 
     section.bmi div.bmi-heading div.section-texts p.section-description {
         max-width: 90%;
-        margin: 2rem 0;
+        margin: 2rem auto;
     }
 
 
@@ -765,7 +764,7 @@ footer div.copyright-part span {
     section.team div.section-wrapper div.section-texts h1 {
         font-size: 2rem;
     }
-    
+
     section.team div.section-wrapper div.gallery {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(6, 1fr);
@@ -773,7 +772,7 @@ footer div.copyright-part span {
     }
 
     section.team div.section-wrapper div.gallery div.card {
-        height: 15rem;
+        height: 20rem;
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -791,6 +790,15 @@ footer div.copyright-part span {
         margin: 0 0 0 1rem;
     }
 
+    section.team div.section-wrapper div.gallery div.card1 {
+        background-position: top;
+    }
+
+    section.team div.section-wrapper div.gallery div.card3 {
+        background-position: top;
+
+    }
+
 
     /* =========== Footer begins =========== */
 
@@ -806,6 +814,7 @@ footer div.copyright-part span {
         place-content: start;
         /* background-color: yellow; */
     }
+
     footer div.branding-part div.links ul h2 {
         margin: 1rem 0;
     }
