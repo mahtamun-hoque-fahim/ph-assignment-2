@@ -257,7 +257,27 @@ section.run-extra div.run-wrapper div.run-img {
 }
 
 
+/* ============= BMI Section===========  */
+section.bmi div.bmi-heading {
+    margin: auto auto;
+    /* background-color: pink; */
+    width: max-content;
+}
 
+section.bmi div.bmi-main {
+    padding: 2.5rem 0;
+}
+
+section.bmi div.bmi-main div.section-wrapper {
+    background-color: #222222;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2.5rem 0;
+}
+section.bmi div.bmi-main div.section-wrapper div.chart-part{
+    display: grid;
+    place-content: center;
+}
 
 
 
