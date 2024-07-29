@@ -75,6 +75,10 @@ p.section-descripton {
     /* background-color: yellow; */
 }
 
+input {
+    font-family: Urbanist, monospace;
+}
+
 /* 
 header,
 main,
@@ -274,14 +278,87 @@ section.bmi div.bmi-main div.section-wrapper {
     grid-template-columns: repeat(2, 1fr);
     padding: 2.5rem 0;
 }
-section.bmi div.bmi-main div.section-wrapper div.chart-part{
+
+section.bmi div.bmi-main div.section-wrapper div.chart-part {
     display: grid;
     place-content: center;
+    padding: 2rem 0;
+}
+
+section.bmi div.bmi-main div.section-wrapper div.chart-part table {
+    border-collapse: collapse;
+    margin: 2rem 0;
+}
+
+section.bmi div.bmi-main div.section-wrapper div.chart-part td,
+th {
+    padding: 1rem;
+    border: 1px solid #ffffff40;
+    text-align: left;
+}
+
+section.bmi div.bmi-main div.section-wrapper div.calculate-part {
+    display: grid;
+    place-content: center;
+    width: 50%;
+}
+section.bmi div.bmi-main div.section-wrapper div.calculate-part p{
+    margin: 1rem 0;
+}
+
+section.bmi div.bmi-main div.section-wrapper div.calculate-part input,
+select {
+    background-color: #ffffff20;
+    border: none;
+    border-radius: .5rem;
+    padding: 1rem 3.5rem;
+}
+
+section.bmi div.bmi-main div.section-wrapper div.calculate-part input::placeholder,
+section.bmi div.bmi-main div.section-wrapper div.calculate-part select > option:placeholder-shown {
+    color: #ffffff40!important;
 }
 
 
 
 
+section.bmi div.bmi-main div.section-wrapper div.calculate-part form.input-fields {
+    display: grid;
+    /* grid-template-areas: "h h h w w w"
+ "g g g a a a"
+      " b b"; */
+      /* background-color: yellow; */
+      /* grid-template-rows: repeat(2,1fr); */
+      grid-template-columns: repeat(2,1fr);
+      gap: 1rem ;
+      margin: 1rem 0;
+
+}
+
+section.bmi div.bmi-main div.section-wrapper div.calculate-part form.input-fields input.height {
+    grid-area: "h";
+    padding: 1rem 3rem;
+}
+
+section.bmi div.bmi-main div.section-wrapper div.calculate-part form.input-fields input.weight {
+    grid-area: "w";
+    padding: 1rem 3rem;
+}
+
+section.bmi div.bmi-main div.section-wrapper div.calculate-part form.input-fields select#gender {
+    grid-area: "g";
+    padding: 1rem 3rem;
+}
+
+section.bmi div.bmi-main div.section-wrapper div.calculate-part form.input-fields select#activity {
+    grid-area: "a";
+    padding: 1rem 3rem;
+}
+
+section.bmi div.bmi-main div.section-wrapper div.calculate-part form.input-fields button.calculate {
+    grid-area: "b";
+    padding: 1rem 3rem;
+}
 
 
 
